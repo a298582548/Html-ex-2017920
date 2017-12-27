@@ -8,7 +8,7 @@
 
     ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<form name="form" method="post" action="Connect.php">
+<form name="form" method="post" action="Connectcheck.php">
     <input type="text" name="id" /> <br>
     <input type="password" name="pw" /> <br>
     <input type="submit" name="button" value="登入" />
