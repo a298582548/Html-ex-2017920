@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>時文中副教授簡歷</title>
+    <title>時文中副教授 學術</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,23 +14,30 @@
             border-radius: 0;
         }
 
-        /* Add a gray background color and some padding to the footer */
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 450px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
         footer {
-            background-color: #f2f2f2;
-            padding: 25px;
+            background-color: #555;
+            color: white;
+            padding: 15px;
         }
 
-        .carousel-inner img {
-            width: 100%; /* Set width to 100% */
-            margin: auto;
-            min-height:200px;
-        }
-
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none;
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
             }
+            .row.content {height:auto;}
         }
     </style>
 </head>
@@ -48,11 +55,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="http://120.108.117.245/~105021010/LoL/ex1.html">首頁</a></li>
-                <li class="active"><a href="http://120.108.117.245/~105021010/LoL/ex1.02.html">簡歷</a></li>
-                <li><a href="#">學術</a></li>
-                <li><a href="#">著作</a></li>
-                <li><a href="#">學生</a></li>
+                <li><a href="http://120.108.117.245/~105021010/index">首頁</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex1.03.html">簡歷</a></li>
+                <li class="active"><a href="http://120.108.117.245/~105021010/LoL/ex1.02.html">學術</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex1.04.html">著作</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex1.05.html">學生</a></li>
                 <li><a href="#">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -62,71 +69,58 @@
     </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="http://csie.asia.edu.tw/csie.png"style="width: 30em" alt="Image">
-            <div class="carousel-caption">
-                <h3 style="color: #fc8e00">亞洲大學資訊工程學系主任</h3>
-                <p style="color: #fc8e00">時文中副教授.</p>
-            </div>
+<div class="container-fluid ">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <a> <img src = "http://dns2.asia.edu.tw/~wjshih/seoul_103_1221.png" style="width:100%"></a>
+            <p><b>通訊地址:</b><br>41354台中市霧峰區柳豐路500號亞洲大學資訊工程學系</p>
         </div>
+        <div class="col-sm-8 text-left">
 
-        <div class="item">
-            <img src="http://dns2.asia.edu.tw/~wjshih/seoul_103_1221.png"style="width: 30em" alt="Image">
-            <div class="carousel-caption">
-                <h3 style="color: darkorange">首爾</h3>
-                <p style="color: darkorange">2014</p>
+            <h3><b>學術服務</b></h3>
+            <p><b>國際期刊 編輯委員:</b>
+                <p>(1) ISRN Education: 2011-2013</p>
+                <p> (2) International Journal of the Academy of Organizational Behavior Management (IJAOBM): 2012-2014</p>
+            </p>
+            <p><b>國際期刊 論文審查:</b>
+                <p>(1) Computers & Education: 2008, 2009, 2010, 2011</p>
+                <p> (2) Turkish Online Journal of Educational Technology, 2011</p>
+                <p>(3) IEEE’s Transactions on Learning Technologies: 2010, 2013</p>
+                <p>(4) International Journal of Computers and Applications: 2010, 2011</p>
+                <p>(5) Journal of Computing in Higher Education: 2009, 2010</p>
+                <p>(6) Journal of Computer Systems, Networks, and Communications: 2010</p>
+                <p>(7) Journal of Supercomputing: 2010, 2013</p>
+                <p>(8) Journal of Information Science and Engineering: 2009</p>
+            </p>
+            <p><b>研討會委員:</b>
+                <p>(1) Program Committee: The 9th IFIP International Conference on Network and Parallel Computing (NPC 2012)</p>
+                <p>(2) Finance Co-Chair: IEEE International Symposium on Multimedia (ISM2010)</p>
+                <p>(3) 議程委員：第六屆台灣數位學習發展研討會(Taiwan E-Learning Forum, TWELF2010)</p>
+                <p>(4) 議程副主席：2013全國計算機會議(2013 National Computer Symposium, NCS 2013)</p> </p>
+            <p><b>研討會議程主持人</b>
+                <p>(1) 共同主持人：第六屆台灣數位學習發展研討會(Taiwan E-Learning Forum, TWELF2010)</p>
+                <p>Session C: 適性化學習與電腦化測驗與評量(一)</p>
+            <p> <b>外校碩士論文口試委員</b>
+                <p>(1) 東海大學: 2009, 2010, 2011, 2012</p>
+                <p>(2) 彰師大: 2009</p>
+            </p>
+            <hr>
+
+
+        </div>
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+                <p>ADS</p>
+            </div>
+            <div class="well">
+                <p>ADS</p>
             </div>
         </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
 
-<div class="container text-center">
-    <h3></h3><br>
-    <div class="row">
-        <div class="col-sm-4">
-            <img src="http://www.asia.edu.tw/upload/news/2015/201509/21/1442879737.jpg" class="img-responsive" style="width:100%" alt="Image">
-            <p>亞大協辦科技部SIG論壇</p>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://www.asia.edu.tw/upload/news/2016/01/06/1452125470.jpg" class="img-responsive" style="width:100%" alt="Image">
-            <p>第一屆藍眼杯表現優異</p>
-        </div>
-        <div class="col-sm-4">
-            <div class="well">
-                <p><b>現職：亞洲大學 資訊工程學系 副教授</b></p>
-                <p><b>兼任 : 亞洲大學 資訊工程學系主任</b></p>
-                <p><b>學歷：交通大學 資訊科學與工程研究所 博士</b></p>
-            </div>
-            <div class="well">
-                <p><b>研究領域：數位學習科技</b></p>
-                <p><b >研究專長：知識工程、雲端運算</b></p>
-
-            </div>
-        </div>
-    </div>
-</div><br>
-
 <footer class="container-fluid text-center">
-    <p>Email: <a style="font-style: italic" ><a style="color: #cd1d11">wjshih@asia.edu.tw </a> </a>or <a style="color: #cd1d11">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>
+    <p>Email: <a style="font-style: italic" ><a style="color: #c8cd1e">wjshih@asia.edu.tw </a> </a>or <a style="color: #c8cd1e">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>
 </footer>
 
 </body>
