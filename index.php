@@ -1,0 +1,143 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: USER
+ * Date: 2018/1/3
+ * Time: 上午 09:52
+ */
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>時文中副教授首頁</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+    margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+    background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a> <img src = "https://upload.wikimedia.org/wikipedia/zh/b/bc/Tw_Asia_University_logo.jpg" style="width: 3.7em"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://120.108.117.245/~105021010/index.php">首頁</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex01.php">簡歷</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex02.php">學術</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex03.php">著作</a></li>
+                <li><a href="http://120.108.117.245/~105021010/LoL/ex04.php">學生</a></li>
+                <li><a href="#">常用連結</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://csie.asia.edu.tw/csie.png"style="width: 30em" alt="Image">
+            <div class="carousel-caption">
+                <h3 style="color: #000000"><b>時文中</b></h3>
+                <p style="color: #000000">亞洲大學資訊工程學系主任</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://dns2.asia.edu.tw/~wjshih/seoul_103_1221.png"style="width: 30em" alt="Image">
+            <div class="carousel-caption">
+                <h3 style="color: darkorange">首爾</h3>
+                <p style="color: darkorange">2014</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container text-center">
+    <h3></h3><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="http://www.asia.edu.tw/upload/news/2015/201509/21/1442879737.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <p>亞大協辦科技部SIG論壇</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="http://www.asia.edu.tw/upload/news/2016/01/06/1452125470.jpg" class="img-responsive" style="width:100%" alt="Image">
+            <p>第一屆藍眼杯表現優異</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="well">
+                <p style="color: #09c217"><b style="height: 100em">時文中</b></p>
+                <p><b>現職：亞洲大學 資訊工程學系 副教授</b></p>
+                <p><b>兼任 : 亞洲大學 資訊工程學系主任</b></p>
+
+            </div>
+            <div class="well">
+                <p><b>學歷：交通大學 資訊科學與工程研究所 博士</b></p>
+                <p><b>研究領域：數位學習科技</b></p>
+                <p><b >研究專長：知識工程、雲端運算</b></p>
+
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+    <p>Email: <a style="font-style: italic" ><a style="color: #cd1d11">wjshih@asia.edu.tw </a> </a>or <a style="color: #cd1d11">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>
+</footer>
+
+</body>
+</html>
