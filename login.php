@@ -34,7 +34,7 @@
                     <input type="text" name="id" placeholder="Username" />
                     <input type="password"  name="pw" placeholder="Password" />
                     <input type="submit" name="button" value="登入" class="btn btn-success btn-sm" /><br>
-                    <a href="register.php">申請帳號</a>
+                    <a href="LoL/register.php">申請帳號</a>
                     <div class="remember-forgot">
                         <div class="row">
                             <div class="col-md-6">

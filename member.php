@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!DOCTYPE html>
     <html lang="en">
     <head>
-        <title>時文中副教授 簡歷</title>
+        <title>控制台</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -71,7 +71,10 @@
                     <li class="active"><a href="http://120.108.117.245/~105021010/member.php">控制頁</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <?php
+                    include("Connect.php");
+                   echo '<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>'
+                ?>
                 </ul>
             </div>
         </div>
@@ -84,25 +87,25 @@
                 <p><b>通訊地址:</b><br>41354台中市霧峰區柳豐路500號亞洲大學資訊工程學系</p>
             </div>
             <?php
-            include("mysql_connect.inc.php");
-            echo '<a href="logout.php" style="font-size: 3em"><b>登出</b></a>';
+            include("Connect.php");
+//            echo '<li><a href="logout.php"  style="color: red;font-size: 3em"><b>登出</b></a></li><br>';
+ //將資料庫裡的所有會員資料顯示在畫面上
+                $sql = "SELECT * FROM `user`";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "<li style='color: blue;font-size: 2em'> <b>使用者訊息: <br>id : $row[0] <br> name：$row[2]<br> email：$row[3]<br> telephone：$row[4]<br> 權限：$row[5]</b></li><br/>";
 
+            }
             //此判斷為判定觀看此頁有沒有權限
             //說不定是路人或不相關的使用者
             //因此要給予排除
             if($_SESSION['id'] != null)
             {
-                echo '<a href="register.php" style="font-size: 3em"><b>新增</b></a>';
-                echo '<a href="update.php" style="font-size: 3em"><b>修改</b></a>';
-                echo '<a href="delete.php" style="font-size: 3em"><b>刪除</b></a>';
+                echo '<li><a href="register.php" style="font-size: 3em;color: red"><b>新增</b></a></li>';
+                echo '<li><a href="update.php" style="font-size: 3em;color: red"><b>修改</b></a></li>';
+                echo '<li><a href="delete.php" style="font-size: 3em;color: red"><b>刪除</b></a></li>';
 
-                //將資料庫裡的所有會員資料顯示在畫面上
-                $sql = "SELECT * FROM user";
-                $result = mysqli_query($link,$sql);
-                while($row = mysqli_fetch_row($result)) {
-                    echo "id:$row[0],passwd:$row[1], name：$row[2], email：$row[3], phone：$row[4], 備註：$row[5]<br>";
                 }
-            }
             else
             {
                 echo '您無權限觀看此頁面!';

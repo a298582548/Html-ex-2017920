@@ -68,10 +68,10 @@
                 <li><a href="http://120.108.117.245/~105021010/LoL/ex02.php">學術</a></li>
                 <li><a href="http://120.108.117.245/~105021010/LoL/ex03.php">著作</a></li>
                 <li class="active"><a href="http://120.108.117.245/~105021010/LoL/ex04.php">學生</a></li>
-                <li><a href="#">常用連結</a></li>
+                <li><a href="http://120.108.117.245/~105021010/member.php">控制頁</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
             </ul>
         </div>
     </div>

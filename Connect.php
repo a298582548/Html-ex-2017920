@@ -20,10 +20,8 @@ mysqli_set_charset($connect,'utf8');
 if(!$connect)
     die("無法對資料庫連線");
 //資料庫連線採UTF8
-
-
 mysqli_set_charset($connect,'utf8');
 ////選擇資料庫
-//if(!@mysqli_select_db($db_name))
-//    echo"無法使用資料庫";
-//?>
+if(!@mysqli_select_db($connect,$db_name))
+    echo"無法使用資料庫";
+?>
