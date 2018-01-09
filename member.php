@@ -101,7 +101,7 @@
             //因此要給予排除
             if($_SESSION['id'] != null)
             {
-                echo '<li><a href="register.php" style="font-size: 3em;color: red"><b>新增</b></a></li>';
+                echo '<li><a href="LoL/register.php"" style="font-size: 3em;color: red"><b>新增</b></a></li>';
                 echo '<li><a href="update.php" style="font-size: 3em;color: red"><b>修改</b></a></li>';
                 echo '<li><a href="delete.php" style="font-size: 3em;color: red"><b>刪除</b></a></li>';
 
@@ -109,7 +109,7 @@
             else
             {
                 echo '您無權限觀看此頁面!';
-                echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+                echo '<meta http-equiv=REFRESH CONTENT=2;url=index.html>';
             }
             ?>
             </div>
