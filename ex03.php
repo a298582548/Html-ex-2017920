@@ -183,10 +183,13 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <p>ADS</p>
+                <a href="#">新增資料</a>
             </div>
             <div class="well">
-                <p>ADS</p>
+                <a href="#">修改資料</a>
+            </div>
+            <div class="well">
+                <a href="#">刪除資料</a>
             </div>
         </div>
     </div>

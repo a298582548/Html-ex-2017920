@@ -40,21 +40,21 @@
                             <div class="col-md-6">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" />
-                                        Remember Me
+<!--                                        <input type="checkbox" />-->
+<!--                                        Remember Me-->
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-md-6 forgot-pass-content">
-                                <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
-                            </div>
+<!--                            <div class="col-md-6 forgot-pass-content">-->
+<!--                                <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="posted-by">Posted By: <a href="http://www.jquery2dotnet.com">Bhaumik Patel</a></div>
+<!--    <div class="posted-by">Posted By: <a href="http://www.jquery2dotnet.com">Bhaumik Patel</a></div>-->
 </div>
 </body>
 </html>
