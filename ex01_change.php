@@ -1,16 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 2017/12/27
- * Time: 下午 01:15
- */
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>登入畫面</title>
+    <title>更改畫面</title>
     <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
     <link rel="stylesheet" href="login/login.css">
     <scrapt scr ="login/login.js"></scrapt>
@@ -29,9 +22,9 @@
             </div>
             <div class="wrap">
                 <p class="form-title">
-                    Sign In</p>
+                    Added</p>
                 <form name="form" method="post" action="Connectcheck.php">
-                    <input type="text" name="id" placeholder="Username" />
+                    <input type="text" name="" placeholder="Username" />
                     <input type="password"  name="pw" placeholder="Password" />
                     <input type="submit" name="button" value="登入" class="btn btn-success btn-sm" /><br>
                     <a href="LoL/register.php">申請帳號</a>

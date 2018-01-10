@@ -88,35 +88,69 @@
 
 
             <h3><b>行政服務</b></h3>
-            <p><b>擔任資應系班導師:</b>
-            <p>98學年度大一(多媒體應用組)</p>
-            <p>99學年度大二(多媒體應用組)</p>
-            <p>100學年度大三(多媒體應用組)</p>
-            <p>101學年度大四(多媒體應用組)</p>
-            <p>102學年度大一(多媒體應用組)</p>
+            <p><b>擔任資應系班導師: <br> </b>
+                <?php
+                include("../Connect.php");
+                $sql = "SELECT * FROM `ex01` where style='1'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任圖書館推展委員會委員:</b>
-            <p>98學年度
-                101學年度
-                102學年度</p>
+            <p><b>擔任圖書館推展委員會委員: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='2'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任 研究發展委員會委員:</b>
-            <p>102學年度</p>
+            <p><b>擔任 研究發展委員會委員: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='3'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任 研究發展處學術發展組 組長:</b>
-            <p>99學年度
-                100學年度</p>
+            <p><b>擔任 研究發展處學術發展組 組長: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='4'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任學生事務會議委員:</b>
-            <p>99學年度
-                100學年度</p>
+            <p><b>擔任學生事務會議委員: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='5'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任專利及技術移轉權益委員會委員:</b>
-            <p>99學年度</p>
+            <p><b>擔任專利及技術移轉權益委員會委員: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='6'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
-            <p><b>擔任資應系生涯導師:</b>
-            <p>97學年度
-                98學年度</p>
+            <p><b>擔任資應系生涯導師: <br></b>
+                <?php
+                $sql = "SELECT * FROM `ex01` where style='7'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
             </p>
             <h3><b>得獎紀錄</b>:98學年度優良導師</h3>
 
