@@ -8,8 +8,8 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-include("Connect.php");
-$name = $_POST['username'];
+include("../Connect.php");
+$name = $_POST['name'];
 $id = $_POST['id'];
 $passwd = $_POST['passwd'];
 $passwd2 = $_POST['passwd2'];
@@ -21,7 +21,7 @@ $email = $_POST['email'];
 if($id != null && $passwd != null && $passwd2 != null && $passwd == $passwd2)
 {
     //新增資料進資料庫語法
-    $sql = "insert into user(id, passwd,username, email,telephone) values ('$id', '$passwd','$name','$email' , '$phone')";
+    $sql = "insert into user(id, passwd,name, email,phone) values ('$id', '$passwd','$name','$email' , '$phone')";
     if(mysqli_query($link,$sql))
     {
         echo '新增成功!';

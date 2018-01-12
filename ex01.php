@@ -103,7 +103,7 @@
                 $sql = "SELECT * FROM `ex01` where style='2'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[0] $row[1]<br>";
                 }
                 ?>
             </p>
@@ -112,7 +112,7 @@
                 $sql = "SELECT * FROM `ex01` where style='3'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[0]<br>$row[1]";
                 }
                 ?>
             </p>
@@ -160,7 +160,7 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="#">新增資料</a>
+                <a href="http://120.108.117.245/~105021010/ex01added.php">新增資料</a>
             </div>
             <div class="well">
                 <a href="#">修改資料</a>

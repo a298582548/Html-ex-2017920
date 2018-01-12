@@ -21,10 +21,10 @@
         <div class="col-md-12">
             <div class="pr-wrap">
                 <div class="pass-reset">
-                    <label>
-                        Enter the email you signed up with</label>
-                    <input type="email" placeholder="Email" />
-                    <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
+<!--                    <label>-->
+<!--                        Enter the email you signed up with</label>-->
+<!--                    <input type="email" placeholder="Email" />-->
+<!--                    <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />-->
                 </div>
             </div>
             <div class="wrap">
