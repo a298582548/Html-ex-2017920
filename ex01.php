@@ -94,8 +94,9 @@
                 $sql = "SELECT * FROM `ex01` where style='1'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]($row[1])<br>";
+                    echo "$row[1]($row[2])<br>";
                 }
+                echo"(1)";
                 ?>
             </p>
             <p><b>擔任圖書館推展委員會委員: <br></b>
@@ -103,8 +104,9 @@
                 $sql = "SELECT * FROM `ex01` where style='2'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0] $row[1]<br>";
+                    echo "$row[1] $row[2]<br>";
                 }
+                echo"(2)";
                 ?>
             </p>
             <p><b>擔任 研究發展委員會委員: <br></b>
@@ -112,8 +114,9 @@
                 $sql = "SELECT * FROM `ex01` where style='3'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>$row[1]";
+                    echo "$row[1]<br>$row[2]";
                 }
+                echo"(3)";
                 ?>
             </p>
             <p><b>擔任 研究發展處學術發展組 組長: <br></b>
@@ -121,8 +124,9 @@
                 $sql = "SELECT * FROM `ex01` where style='4'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[1]$row[2]<br>";
                 }
+                echo"(4)";
                 ?>
             </p>
             <p><b>擔任學生事務會議委員: <br></b>
@@ -130,8 +134,9 @@
                 $sql = "SELECT * FROM `ex01` where style='5'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[1]$row[2]<br>";
                 }
+                echo"(5)";
                 ?>
             </p>
             <p><b>擔任專利及技術移轉權益委員會委員: <br></b>
@@ -139,8 +144,9 @@
                 $sql = "SELECT * FROM `ex01` where style='6'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[1]$row[2]<br>";
                 }
+                echo"(6)";
                 ?>
             </p>
             <p><b>擔任資應系生涯導師: <br></b>
@@ -148,8 +154,9 @@
                 $sql = "SELECT * FROM `ex01` where style='7'";
                 $result = mysqli_query($connect,$sql);
                 while($row = mysqli_fetch_row($result)) {
-                    echo "$row[0]<br>";
+                    echo "$row[1]$row[2]<br>";
                 }
+                echo"(7)";
                 ?>
             </p>
             <h3><b>得獎紀錄</b>:98學年度優良導師</h3>
@@ -163,10 +170,10 @@
                 <a href="http://120.108.117.245/~105021010/ex01added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="#">修改資料</a>
+                <a href="http://120.108.117.245/~105021010/ex01change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="#">刪除資料</a>
+                <a href="http://120.108.117.245/~105021010/ex01delete.php">刪除資料</a>
             </div>
         </div>
     </div>

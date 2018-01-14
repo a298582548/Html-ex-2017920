@@ -10,22 +10,21 @@
 <?php
 include("../Connect.php");
 $name = $_POST['name'];
-$id = $_POST['id'];
+$username = $_POST['uearname'];
 $passwd = $_POST['passwd'];
 $passwd2 = $_POST['passwd2'];
 $phone = $_POST['telephone'];
 $email = $_POST['email'];
-
 //判斷帳號密碼是否為空值
 //確認密碼輸入的正確性
 if($id != null && $passwd != null && $passwd2 != null && $passwd == $passwd2)
 {
     //新增資料進資料庫語法
-    $sql = "insert into user(id, passwd,name, email,phone) values ('$id', '$passwd','$name','$email' , '$phone')";
-    if(mysqli_query($link,$sql))
+    $sql = "insert into user(username, passwd,name, email,phone) values ('$username', '$passwd','$name','$email' , '$phone')";
+    if(mysqli_query($connect,$sql))
     {
         echo '新增成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=../login.html>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=../login.php>';
     }
     else
     {

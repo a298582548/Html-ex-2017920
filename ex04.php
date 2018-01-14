@@ -86,71 +86,186 @@
         <div class="col-sm-8 text-left">
             <h1>102學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>奕華</h3><br>
-            <h3>科翰</h3>　
-            <h3>欣盈</h3><br>
-            <h3>綱洵</h3>
+            <h3>奕華(1)</h3><br>
+            <?php
+            include("../Connect.php");
+            $sql = "SELECT * FROM `ex04` where style='1'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+
+            ?>
+            <h3>科翰(2)</h3>　
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='2'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+
+            ?>
+            <h3>欣盈(3)</h3><br>
+            <?php
+
+            $sql = "SELECT * FROM `ex04` where style='3'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+
+            ?>
+            <h3>綱洵(4)</h3>
+            <?php
+
+            $sql = "SELECT * FROM `ex04` where style='4'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
             <h1>101學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>承儒</h3>
-            <p>故事敘說模型應用於國中生情緒管理教學評量之初探(TWELF 2013)<br>
-                互動式故事敘說應用於自傷預防情緒管理之研究(GCCCE 2013)(碩士論文)</p>
+            <h3>承儒(5)</h3>
+            <?php
+
+            $sql = "SELECT * FROM `ex04` where style='5'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
             <h1>100學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>育銘</h3>
-            <p>虛擬教具資源庫之研製－應用於國小數學志工課輔(TWELF 2013)(碩士論文)</p>
-            <h3>蟬薇</h3>
-            <p>
-                應用互動式情境模擬系統於課輔志工訓練之研究：以國小三年級數學減法為例(NCS 2013)<br>
-                應用互動式情境模擬系統於課輔志工訓練之研究：以國小四則運算為例(AIT 2013)(碩士論文)
-            </p>
-            <h3>家瑋</h3>
-            <p>
-                應用情緒管理遊戲於國中生自傷預防教育之評量：以個人化認知偏誤為例(NCS 2013)<br>
-                互動遊戲式評量應用於情緒管理之研究(TWELF 2012)(碩士論文)
-            </p>
+            <h3>育銘(6)</h3>
+            <?php
+
+            $sql = "SELECT * FROM `ex04` where style='6'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>蟬薇(7)</h3>
+            <?php
+
+            $sql = "SELECT * FROM `ex04` where style='7'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>家瑋(8)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='8'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
             <h1>99學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>青瑜</h3>
-            <p>
-                應用Facebook與操作式虛擬教具於課後輔導 之研究-以國小五年級等值分數為例(AIT 2012)<br>
-                應用基於認知衝突理論的虛擬教具於課後輔導之研究-以國小四年級則運算單元為例(碩士論文)
-            </p>
-            <h3>張傑</h3>
-            <p>
-                互動式故事敘說應用於校園霸凌預防之研究(TWELF 2012)<br>
-                互動式故事板應用於衝突管理學習之先導型研究 - 以校園霸凌預防為例(GCCCE 2012)<br>
-                基於多階段圖的故事敘說動畫製作之研究 -以校園霸凌預防為例(碩士論文)
-            </p>
-            <h3>叡孟</h3>
-            <p> 互動式遊戲應用於霸凌預防情緒管理之研究(GCCCE 2013)(碩士論文)</p>
+            <h3>青瑜(9)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='9'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>張傑(10)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='10'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>叡孟(11)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='11'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
             <h1>98學年度 入學 </h1>
             <h3><b>一般生</b></h3>
-            <h3>聰智</h3>
-            <p>SCORM教材行動檢索方法之研究 (IETAC 2011)<br>
-                應用操作式虛擬教具於課後輔導之研究-以國小三年級數學減法單元為例(碩士論文)</p>
+            <h3>聰智(12)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='12'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
             <h3><b>資工在職專班</b></h3>
-            <h3>智瑩</h3>
-            <p>適用於課輔補救教學之診斷策略研究─以國中數學低成就學生為例 (IETAC 2011)<br>
-                應用於課後輔導之診斷測驗與補救教學研究─以一元一次方程式單元為例(碩士論文)</p>
+            <h3>智瑩(13)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='13'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
 
             <h1>97學年度 入學</h1>
             <h3><b>資工在職專班</b></h3>
-            <h3>耀鴻</h3>
-            <p>以Web2.0的概念建置數學教學法知識庫：應用於偏鄉課輔 (IETAC 2009)<br>
-                以維基系統建置國小數學課輔範例庫之研究(碩士論文)</p>
-            <h3>美梅</h3>
-            <p>使用維基提示法加強國小學童寫作能力之研究 (IETAC 2009)<br>
-                使用維基提示法加強國小學童寫作能力之研究(碩士論文)</p>
-            <h3>明發</h3>
-            <p>提昇手球訓練成效之數位學習網 (AIT 2010)<br>
-                建置維基式教學平台輔助國小手球訓練之研究(碩士論文)</p>
-            <h3>碧英</h3>
-            <p>應用物件導向學習環境與教材進行國小修辭教學之研究 (OOTA 2009)<br>
-                應用維基提示法於學童修辭能力之研究(碩士論文)</p>
-            <h3>健華</h3>
-            <p>建置維基式教學知識庫輔助適性化品格教育之研究 (AIT 2010)<br>
-                使用維基式教學資源庫輔助適性化品格教育之研究(碩士論文)</p>
+            <h3>耀鴻(14)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='14'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>美梅(15)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='15'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>明發(16)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='16'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>碧英(17)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='17'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
+            <h3>健華(18)</h3>
+            <?php
+            $sql = "SELECT * FROM `ex04` where style='18'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"";
+            ?>
 
             <hr>
 
@@ -158,13 +273,13 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="#">新增資料</a>
+                <a href="http://120.108.117.245/~105021010/ex04.added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="#">修改資料</a>
+                <a href="http://120.108.117.245/~105021010/ex04change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="#">刪除資料</a>
+                <a href="http://120.108.117.245/~105021010/ex04delete.php">刪除資料</a>
             </div>
         </div>
     </div>

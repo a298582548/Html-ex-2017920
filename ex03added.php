@@ -25,30 +25,27 @@
             <div class="wrap">
                 <p class="form-title">
                     Added</p>
-                <form name="form" method="post" action="LoL/register_ex01.php">
-                    <p><b>semester:</b></p> <input type="text" name="semester" placeholder="semester" />
-                    <p><b>class:</b></p> <input type="text"  name="class" placeholder="可是空值" />
+                <form name="form" method="post" action="register_ex03.php">
+                    <p><b>semester:</b></p> <input type="text" name="paper" placeholder="paper" />
                     <p><b>style</b></p>
                     <select name="style">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <input type="submit" name="button" value="確定" class="btn btn-success btn-sm" /><br>
-                    <div class="remember-forgot">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <input type="submit" name="button" value="確定" class="btn btn-success btn-sm" /><br>
+                        <div class="remember-forgot">
+                            <div class="row">
+                                <div class="col-md-6">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </form>
             </div>
+            </form>
         </div>
     </div>
+</div>
 <!--        <div class="posted-by">Posted By: <a href="http://www.jquery2dotnet.com">Bhaumik Patel</a></div>-->
 </div>
 </body>

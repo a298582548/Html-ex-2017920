@@ -85,32 +85,59 @@
         </div>
         <div class="col-sm-8 text-left">
 
-            <h3><b>學術服務</b></h3>
-            <p><b>國際期刊 編輯委員:</b>
-            <p>(1) ISRN Education: 2011-2013</p>
-            <p> (2) International Journal of the Academy of Organizational Behavior Management (IJAOBM): 2012-2014</p>
+            <h3 style="font-size: 3em"><b>學術服務</b></h3>
+            <p><b>國際期刊 編輯委員:</b> <br>
+                <?php
+                include("../Connect.php");
+                $sql = "SELECT * FROM `ex02` where style='1'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                echo"(1)";
+                ?>
             </p>
-            <p><b>國際期刊 論文審查:</b>
-            <p>(1) Computers & Education: 2008, 2009, 2010, 2011</p>
-            <p> (2) Turkish Online Journal of Educational Technology, 2011</p>
-            <p>(3) IEEE’s Transactions on Learning Technologies: 2010, 2013</p>
-            <p>(4) International Journal of Computers and Applications: 2010, 2011</p>
-            <p>(5) Journal of Computing in Higher Education: 2009, 2010</p>
-            <p>(6) Journal of Computer Systems, Networks, and Communications: 2010</p>
-            <p>(7) Journal of Supercomputing: 2010, 2013</p>
-            <p>(8) Journal of Information Science and Engineering: 2009</p>
+            <p><b>國際期刊 論文審查:</b> <br>
+                <?php
+                $sql = "SELECT * FROM `ex02` where style='2'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                echo"(2)";
+                ?>
             </p>
-            <p><b>研討會委員:</b>
-            <p>(1) Program Committee: The 9th IFIP International Conference on Network and Parallel Computing (NPC 2012)</p>
-            <p>(2) Finance Co-Chair: IEEE International Symposium on Multimedia (ISM2010)</p>
-            <p>(3) 議程委員：第六屆台灣數位學習發展研討會(Taiwan E-Learning Forum, TWELF2010)</p>
-            <p>(4) 議程副主席：2013全國計算機會議(2013 National Computer Symposium, NCS 2013)</p> </p>
-            <p><b>研討會議程主持人</b>
-            <p>(1) 共同主持人：第六屆台灣數位學習發展研討會(Taiwan E-Learning Forum, TWELF2010)</p>
-            <p>Session C: 適性化學習與電腦化測驗與評量(一)</p>
-            <p> <b>外校碩士論文口試委員</b>
-            <p>(1) 東海大學: 2009, 2010, 2011, 2012</p>
-            <p>(2) 彰師大: 2009</p>
+            <p><b>研討會委員:</b> <br>
+                <?php
+                $sql = "SELECT * FROM `ex02` where style='3'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                echo"(3)";
+                ?>
+            </p>
+            <p><b>研討會議程主持人</b> <br>
+                <?php
+
+                $sql = "SELECT * FROM `ex02` where style='4'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                echo"Session C: 適性化學習與電腦化測驗與評量(一) <br>";
+                echo"(4)";
+                ?>
+            <p></p>
+            <p> <b>外校碩士論文口試委員</b> <br>
+                <?php
+                $sql = "SELECT * FROM `ex02` where style='5'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]($row[1])<br>";
+                }
+                echo"(5)";
+                ?>
             </p>
             <hr>
 
@@ -118,13 +145,13 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="#">新增資料</a>
+                <a href="http://120.108.117.245/~105021010/ex02added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="#">修改資料</a>
+                <a href="http://120.108.117.245/~105021010/ex02change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="#">刪除資料</a>
+                <a href="http://120.108.117.245/~105021010/ex02delete.php">刪除資料</a>
             </div>
         </div>
     </div>

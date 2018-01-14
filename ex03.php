@@ -86,30 +86,24 @@
         <div class="col-sm-8 text-left">
             <h3>Ａ. 期刊論文(Journal Papers)</h3>
 
-            <p>[1]   Chao-Tung Yang, Wen-Chung Shih, Chih-Lin Huang, Fuu-Cheng Jiang and William Cheng-Chung Chu, (2016), “On construction of a distributed data storage system in cloud,” Computing, 98(1-2), pp. 93–118. [EI].<br>
-                [2]   Chao-Tung Yang, Wen-Chung Shih, Lung-Teng Chen, Cheng-Ta Kuo, Fuu-Cheng Jiang and Fang-Yie Leu, (2015), “Accessing medical image file with co-allocation HDFS in cloud,” Future Generation Computing Systems (FGCS), 43-44, pp. 61-73. [SCI].<br>
-                [3]   Chao-Tung Yang, Jung-Chun Liu, Rajiv Ranjan, Wen-Chung Shih and Chih-Hao Lin, (2013), “On construction of heuristic QoS bandwidth management in clouds,” Concurrency and Computation: Practice and Experience, 25(18), pp. 2540–2560. [SCI].<br>
-                [4]   Che-Ching Yang, Shian-Shyong Tseng, Wen-Chung Shih and Tyne Liang, (2012), “A cross-text annotation sharing mechanism for enhancing students’ comprehension of poetry,” The Turkish Online Journal of Educational Technology, 11(4), pp. 13-24. [SSCI].<br>
-                [5]   Wen-Chung Shih, Shian-Shyong Tseng, Che-Ching Yang, Chih-Yu Lin and Tyne Liang, (2012), “A Folksonomy-based Guidance Mechanism for Context-aware Ubiquitous Learning: a Case Study of Chinese Scenic Poetry Appreciation Activities,” Educational Technology & Society, 15(1), pp. 90-101. [SSCI]. (NSC98-2511-S-468-002 )<br>
-                [6]   Chao-Tung Yang, Wen-Chung Shih and Lung-Hsing Cheng, (2012), “Performance-based Dynamic Loop Scheduling in Heterogeneous Computing Environments,” Journal of Supercomputing, 59(1), pp. 414-442. [SCI].<br>
-                [7]   Wen-Chung Shih, Shian-Shyong Tseng, Che-Ching Yang and Tyne Liang, (2011), “Time-Quality Tradeoff of Waiting Strategies for Tutors to Retrieve Relevant Teaching Methods,” Educational Technology & Society, 14(4), pp. 207-221. [SSCI]. (NSC 99-2511-S-468-003- )<br>
-                [8]   Chao-Tung Yang and Wen-Chung Shih, (2011), “On Construction of Cluster and Grid Computing Platforms for Parallel Bioinformatics Applications,” International Journal of Grid and High Performance Computing, 3(1), pp. 69-88. [EI]<br>
-                [9]   Wen-Chung Shih, Chao-Tung Yang and Shian-Shyong Tseng, (2010), “Performance-based Data Distribution for Data Mining Applications on Grid Computing Environments,” Journal of Supercomputing, 52(2), pp. 171-198. [SCI]. (NSC 97-2511-S-468-003- )<br>
-                [10]  Wen-Chung Shih, Chao-Tung Yang, Shian-Shyong Tseng and Yianshu Chu, (2010), “Using an Interactive Approach to Finding Right Tutors on P2P Tutoring Grids,” Journal of Internet Technology (JIT), 11(2), pp. 215-225. [SCI]. (NSC 97-2511-S-468-003- )<br>
-                [11]  Chao-Tung Yang, Wen-Chung Shih and Ching-Hsien Hsu, (2010), “On Utilization of the Grid Computing Technology for Video Conversion and 3D Rendering,” Computer Standards & Interfaces, 32(1), pp. 29-37. [SCI].<br>
-                [12]  Wen-Chung Shih, Chao-Tung Yang and Shian-Shyong Tseng, (2009), “Ontology-based Content Organization and Retrieval for SCORM-Compliant Teaching Materials in Data Grids,” Future Generation Computing Systems (FGCS), 25(6), pp. 687-694. [SCI]. (NSC 97-2511-S-468-003- )<br>
-                [13]  Wen-Chung Shih and Shian-Shyong Tseng, (2009), “A Knowledge-based Approach to Retrieving Teaching Materials for Context-aware Learning,” Educational Technology & Society, 12(1), pp. 82-106. [SSCI]. (NSC 97-2511-S-468-003- )<br>
-                [14]  Wen-Chung Shih, Chao-Tung Yang, and Shian-Shyong Tseng, (2009), “Using a Performance-based Skeleton to Implement Divisible Load Applications on Grid Computing Environments,” Journal of Information Science and Engineering (JISE), 25(1), pp. 59-81. [SCI]. (NSC 97-2511-S-468-003- )<br>
-                [15]  Wen-Chung Shih, Shian-Shyong Tseng, and Chao-Tung Yang, (2008), “Wiki-based Rapid Prototyping for Teaching-Material Design in e-Learning Grids,” Computers & Education, 51(3), pp. 1037-1057. [SSCI].<br>
-                [16]  Wen-Chung Shih, Shian-Shyong Tseng, and Chao-Tung Yang, (2008), “Using Taxonomic Indexing Trees to Efficiently Retrieve SCORM-compliant Documents in e-Learning Grids,” Journal of Educational Technology & Society, 11(2), pp. 206-226. [SSCI].<br>
-                [17]  Chao-Tung Yang, Wen-Chung Shih, and Shian-Shyong Tseng, (2008), “Dynamic Partitioning of Loop Iterations on Heterogeneous PC Clusters,” Journal of Supercomputing, 44(1), pp. 1-23. [SCI].<br>
-                [18]  Wen-Chung Shih, Chao-Tung Yang, and Shian-Shyong Tseng, (2007), “A Performance-based Parallel Loop Scheduling on Grid Environments,” Journal of Supercomputing, 41(3), pp. 247-267. [SCI].<br>
-                [19]  Chao-Tung Yang, Kuan-Wei Cheng, and Wen-Chung Shih, (2007), “On development of an efficient parallel loop self-scheduling for grid computing environments,” Parallel Computing, 33(7-8), pp. 467-487. [SCI].<br>
-            </p>
+            <?php
+            include("../Connect.php");
+            $sql = "SELECT * FROM `ex03` where style='1'";
+            $result = mysqli_query($connect,$sql);
+            while($row = mysqli_fetch_row($result)) {
+                echo "$row[0]<br>";
+            }
+            echo"(1)";
+            ?>
             <h3>Ｂ. 國際研討會與專書論文</h3>
             <p>Lecture Notes in Computer Science<br>
-                [1]   Chao-Tung Yang, Wen-Chung Shih and Chih-Lin Huang, (2012), “Implementation of a distributed data storage system with resource monitoring on cloud computing,” in Proc. of GPC 2012, Lecture Notes in Computer Science, Vol. 7296, pp. 64-73. [EI]<br>
-                [2]   Chao-Tung Yang, Cheng-Ta, Kuo, Wen-Hung Hsu and Wen-Chung Shih, (2012), “A medical image file accessing system with virtualization fault tolerance on cloud,” in Proc. of GPC 2012, Lecture Notes in Computer Science, Vol. 7296, pp. 64-73. [EI]<br>
+                <?php
+                $sql = "SELECT * FROM `ex03` where style='2'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
                 [3]   Wen-Chung Shih, Shian-Shyong Tseng, and Chao-Tung Yang, (2011), “Deployment of Interactive Games in Learning Management Systems on Cloud Environments for Diagnostic Assessments,” in Proc. of Edutainment 2011, Sep. 7-9, 2011, Taipei, Taiwan and M. Chang et al. (Eds.) Lecture Notes in Computer Science, Vol. 6872, pp. 492-496. [EI]<br>
                 [4]   Wen-Chung Shih, Chao-Tung Yang, and Shian-Shyong Tseng, (2007), “Performance-based Workload Distribution on Grid Environments,” in Proc. of 2nd International Conference on Grid and Pervasive Computing (GPC 2007), May 2-4, 2007, Paris, France and Lecture Notes in Computer Science, Vol. 4459, pp. 385-396.<br>
                 [5]   Wen-Chung Shih, Chao-Tung Yang, and Shian-Shyong Tseng, (2006), “A Methodology for Retrieving SCORM-Compliant Teaching Materials on Grid Environments,” in Proc. of 9th International Conference on Asian Digital Library (ICADL 2006), Nov. 27-30, 2006, Kyoto, Japan and Lecture Notes in Computer Science,Vol. 4312, pp. 498-502.<br>
@@ -123,6 +117,7 @@
                 Book Chapters<br>
                 [1]     Wen-Chung Shih and Shian-Shyong Tseng, (2011), “The Content-Based Face of Organizations,” The New Faces of Organizations in the 21st Century, Vol. 3, NAISIT Publishers, 978-0-986-53352-5, pp. 119-146.<br>
                 [2]     Wen-Chung Shih, Shian-Shyong Tseng and Jui-Feng Weng, (2008), “Teaching-Material Crystallization: Wiki-based Rapid Prototyping for Teaching-Material Design,” Web 2.0: The Business Model, Oct. 20, 2008, Springer US, 978-0-387-85894-4, pp. 249-270.<br>
+            <p>(2)</p>
             </p>
             <h3>C. 研討會論文(Conference Papers)</h3>
             <p>[1]   Yang, C. T., Lu, H. W., & Wen-Chung Shih. (2016). Design of a big data accessing and processing architecture using cloud computing technologies. Paper presented at the 2016 6th International Workshop on Computer Science and Engineering, WCSE 2016<br>
@@ -143,6 +138,7 @@
                 [16]  Wen-Chung Shih, Chao-Tung Yang, Ping-I Chen, and Shian-Shyong Tseng, (2006), “Performance-Based Content Retrieval for Learning Object Repositories on Grid Environments,” in Proc. of 7th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2006), Dec. 4-7, 2006, Taipei, Taiwan, pp. 515-520. [EI]<br>
                 [17]  Wen-Chung Shih, Chao-Tung Yang, Shian-Shyong Tseng, and Chun-Jen Chen, (2006), “A Peer-to-Peer Based Framework of InterLibrary Cooperation for Digital Libraries,” in Proc. of 7th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2006), Dec. 4-7, 2006, Taipei, Taiwan, pp. 521-524. [EI]<br>
                 [18]  Wen-Chung Shih, Chao-Tung Yang, Ping-I Chen, and Shian-Shyong Tseng, (2005), “A Hybrid Parallel Loop Scheduling Scheme on Heterogeneous PC Clusters,” in Proc. of 6th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2005), Dec. 5-8, 2005, Dalian, China, pp. 56-58. [EI]<br>
+            <p>(3)</p>
             </p>
             <h3> D. 中文期刊論文(Chinese Journal Papers)</h3>
 
@@ -150,6 +146,7 @@
                 [2]   謝蟬薇、時文中, (in press), “應用情境模擬系統於課輔志工訓練之研究：以國小三年級數學減法為例,” 數位學習科技期刊。<br>
                 [3]   張家瑋、時文中、翁瑞鋒、曾憲雄, (2014), “應用情緒管理遊戲於國中生自傷預防教育之評量,” 數位學習科技期刊, 6(1), pp. 27-41。(NSC 100-2632-S-468-001-MY3)<br>
                 [4]   時文中、曾憲雄, (2011), “基於照片標籤的形成性評量提升戶外唐詩教學成效之研究,” 華文學刊, 9(2), pp. 13-22, 新加坡華文教師總會。(NSC 98-2511-S-468-002- )<br>
+            <p>(4)</p>
             </p>
             <h3>E. 國內研討會論文(Conference Papers)</h3>
             <p>[1]   黃沛禎、時文中、謝宥諒, (2017), “轉譯因子協助蛋白質合成之3D動畫教學影片製作與評估,” 第12屆台灣數位學習發展研討會(TWELF 2017), Mar. 16-17, 2017, NCU, Taiwan.<br>
@@ -176,6 +173,7 @@
                 [22]  時碧英、時文中, (2009), “應用物件導向學習環境與教材進行國小修辭教學之研究,” 物件導向技術及應用研討會(OOTA 2009), Nov. 20, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
                 [23]  時美梅、時文中, (2009), “使用維基提示法加強國小學童寫作能力之研究,” 資訊教育與科技應用研討會(IETAC 2009), Nov. 6, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
                 [24]  張耀鴻、高千喻、時文中, (2009), “以Web2.0的概念建置數學教學法知識庫,” 資訊教育與科技應用研討會(IETAC 2009), Nov. 6, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
+            <p>(5)</p>
             </p>
             <hr>
 
@@ -183,13 +181,13 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="#">新增資料</a>
+                <a href="http://120.108.117.245/~105021010/ex03added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="#">修改資料</a>
+                <a href="http://120.108.117.245/~105021010/ex03change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="#">刪除資料</a>
+                <a href="http://120.108.117.245/~105021010/ex03delete.php">刪除資料</a>
             </div>
         </div>
     </div>

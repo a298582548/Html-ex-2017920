@@ -12,11 +12,11 @@ $semester = $_POST['semester'];
 $class = $_POST['class'];
 $style = $_POST['style'];
 
-if($semester != null && $style != null)
+if($semester != null )
 {
     //新增資料進資料庫語法
-    $sql = "insert into ex01(semester,class,style) values ('$semester', '$class','$style')";
-    if(mysql_query($link,$sql))
+    $sql = "INSERT INTO `ex01` (`semester`, `class`, `style`) VALUES ('$semester', '$class', '$style')";
+    if(mysqli_query($connect,$sql))
     {
         echo '新增成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=ex01.php>';
