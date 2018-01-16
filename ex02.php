@@ -94,7 +94,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[0]($row[1])<br>";
                 }
-                echo"(1)";
+                echo"<a style='color: red'>(1)</a>";
                 ?>
             </p>
             <p><b>國際期刊 論文審查:</b> <br>
@@ -104,7 +104,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[0]($row[1])<br>";
                 }
-                echo"(2)";
+                echo"<a style='color: red'>(2)</a>";
                 ?>
             </p>
             <p><b>研討會委員:</b> <br>
@@ -114,7 +114,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[0]($row[1])<br>";
                 }
-                echo"(3)";
+                echo"<a style='color: red'>(3)</a>";
                 ?>
             </p>
             <p><b>研討會議程主持人</b> <br>
@@ -126,7 +126,7 @@
                     echo "$row[0]($row[1])<br>";
                 }
                 echo"Session C: 適性化學習與電腦化測驗與評量(一) <br>";
-                echo"(4)";
+                echo"<a style='color: red'>(4)</a>";
                 ?>
             <p></p>
             <p> <b>外校碩士論文口試委員</b> <br>
@@ -136,7 +136,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[0]($row[1])<br>";
                 }
-                echo"(5)";
+                echo"<a style='color: red'>(5)</a>";
                 ?>
             </p>
             <hr>
@@ -145,17 +145,18 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex02added.php">新增資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex02added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex02change.php">修改資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex02change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex02delete.php">刪除資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex02delete.php">刪除資料</a>
             </div>
         </div>
     </div>
 </div>
+
 
 <footer class="container-fluid text-center">
     <p>Email: <a style="font-style: italic" ><a style="color: #c8cd1e">wjshih@asia.edu.tw </a> </a>or <a style="color: #c8cd1e">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>

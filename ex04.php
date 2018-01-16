@@ -84,11 +84,13 @@
             <p><b>通訊地址:</b><br>41354台中市霧峰區柳豐路500號亞洲大學資訊工程學系</p>
         </div>
         <div class="col-sm-8 text-left">
+
             <h1>102學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>奕華(1)</h3><br>
+            <h3>奕華<a style='color: red'>(1)</a></h3><br>
             <?php
             include("../Connect.php");
+            $id = $_POST['id'];
             $sql = "SELECT * FROM `ex04` where style='1'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
@@ -96,7 +98,7 @@
             }
 
             ?>
-            <h3>科翰(2)</h3>　
+            <h3>科翰<a style='color: red'>(2)</a></h3>　
             <?php
             $sql = "SELECT * FROM `ex04` where style='2'";
             $result = mysqli_query($connect,$sql);
@@ -105,7 +107,7 @@
             }
 
             ?>
-            <h3>欣盈(3)</h3><br>
+            <h3>欣盈<a style='color: red'>(3)</a></h3><br>
             <?php
 
             $sql = "SELECT * FROM `ex04` where style='3'";
@@ -115,7 +117,7 @@
             }
 
             ?>
-            <h3>綱洵(4)</h3>
+            <h3>綱洵<a style='color: red'>(4)</a></h3>
             <?php
 
             $sql = "SELECT * FROM `ex04` where style='4'";
@@ -123,11 +125,11 @@
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
             <h1>101學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>承儒(5)</h3>
+            <h3>承儒<a style='color: red'>(5)</a></h3>
             <?php
 
             $sql = "SELECT * FROM `ex04` where style='5'";
@@ -139,7 +141,7 @@
             ?>
             <h1>100學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>育銘(6)</h3>
+            <h3>育銘<a style='color: red'>(6)</a></h3>
             <?php
 
             $sql = "SELECT * FROM `ex04` where style='6'";
@@ -147,9 +149,9 @@
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>蟬薇(7)</h3>
+            <h3>蟬薇<a style='color: red'>(7)</a></h3>
             <?php
 
             $sql = "SELECT * FROM `ex04` where style='7'";
@@ -157,20 +159,20 @@
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>家瑋(8)</h3>
+            <h3>家瑋<a style='color: red'>(8)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='8'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
             <h1>99學年度 入學</h1>
             <h3><b>一般生</b></h3>
-            <h3>青瑜(9)</h3>
+            <h3>青瑜<a style='color: red'>(9)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='9'";
             $result = mysqli_query($connect,$sql);
@@ -179,76 +181,76 @@
             }
             echo"";
             ?>
-            <h3>張傑(10)</h3>
+            <h3>張傑<a style='color: red'>(10)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='10'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>叡孟(11)</h3>
+            <h3>叡孟<a style='color: red'>(11)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='11'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
             <h1>98學年度 入學 </h1>
             <h3><b>一般生</b></h3>
-            <h3>聰智(12)</h3>
+            <h3>聰智<a style='color: red'>(12)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='12'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
             <h3><b>資工在職專班</b></h3>
-            <h3>智瑩(13)</h3>
+            <h3>智瑩<a style='color: red'>(13)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='13'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
 
             <h1>97學年度 入學</h1>
             <h3><b>資工在職專班</b></h3>
-            <h3>耀鴻(14)</h3>
+            <h3>耀鴻<a style='color: red'>(14)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='14'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>美梅(15)</h3>
+            <h3>美梅<a style='color: red'>(15)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='15'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>明發(16)</h3>
+            <h3>明發<a style='color: red'>(16)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='16'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
-            <h3>碧英(17)</h3>
+            <h3>碧英<a style='color: red'>(17)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='17'";
             $result = mysqli_query($connect,$sql);
@@ -257,14 +259,14 @@
             }
             echo"";
             ?>
-            <h3>健華(18)</h3>
+            <h3>健華<a style='color: red'>(18)</a></h3>
             <?php
             $sql = "SELECT * FROM `ex04` where style='18'";
             $result = mysqli_query($connect,$sql);
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"";
+
             ?>
 
             <hr>
@@ -272,14 +274,16 @@
 
         </div>
         <div class="col-sm-2 sidenav">
+
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex04.added.php">新增資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex04.added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex04change.php">修改資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex04change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex04delete.php">刪除資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex04delete.php">刪除資料</a>
+
             </div>
         </div>
     </div>

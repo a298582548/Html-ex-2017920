@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2018/1/3
- * Time: 上午 09:59
- */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,6 +78,7 @@
             <p><b>通訊地址:</b><br>41354台中市霧峰區柳豐路500號亞洲大學資訊工程學系</p>
         </div>
         <div class="col-sm-8 text-left">
+
             <h3>Ａ. 期刊論文(Journal Papers)</h3>
 
             <?php
@@ -93,7 +88,7 @@
             while($row = mysqli_fetch_row($result)) {
                 echo "$row[0]<br>";
             }
-            echo"(1)";
+            echo"<a style='color: red'>(1)</a>";
             ?>
             <h3>Ｂ. 國際研討會與專書論文</h3>
             <p>Lecture Notes in Computer Science<br>
@@ -117,7 +112,7 @@
                 Book Chapters<br>
                 [1]     Wen-Chung Shih and Shian-Shyong Tseng, (2011), “The Content-Based Face of Organizations,” The New Faces of Organizations in the 21st Century, Vol. 3, NAISIT Publishers, 978-0-986-53352-5, pp. 119-146.<br>
                 [2]     Wen-Chung Shih, Shian-Shyong Tseng and Jui-Feng Weng, (2008), “Teaching-Material Crystallization: Wiki-based Rapid Prototyping for Teaching-Material Design,” Web 2.0: The Business Model, Oct. 20, 2008, Springer US, 978-0-387-85894-4, pp. 249-270.<br>
-            <p>(2)</p>
+            <p><a style='color: red'>(2)</a></p>
             </p>
             <h3>C. 研討會論文(Conference Papers)</h3>
             <p>[1]   Yang, C. T., Lu, H. W., & Wen-Chung Shih. (2016). Design of a big data accessing and processing architecture using cloud computing technologies. Paper presented at the 2016 6th International Workshop on Computer Science and Engineering, WCSE 2016<br>
@@ -138,7 +133,14 @@
                 [16]  Wen-Chung Shih, Chao-Tung Yang, Ping-I Chen, and Shian-Shyong Tseng, (2006), “Performance-Based Content Retrieval for Learning Object Repositories on Grid Environments,” in Proc. of 7th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2006), Dec. 4-7, 2006, Taipei, Taiwan, pp. 515-520. [EI]<br>
                 [17]  Wen-Chung Shih, Chao-Tung Yang, Shian-Shyong Tseng, and Chun-Jen Chen, (2006), “A Peer-to-Peer Based Framework of InterLibrary Cooperation for Digital Libraries,” in Proc. of 7th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2006), Dec. 4-7, 2006, Taipei, Taiwan, pp. 521-524. [EI]<br>
                 [18]  Wen-Chung Shih, Chao-Tung Yang, Ping-I Chen, and Shian-Shyong Tseng, (2005), “A Hybrid Parallel Loop Scheduling Scheme on Heterogeneous PC Clusters,” in Proc. of 6th International Conference on Parallel and Distributed Computing, Applications and Technologies (PDCAT 2005), Dec. 5-8, 2005, Dalian, China, pp. 56-58. [EI]<br>
-            <p>(3)</p>
+                <?php
+                $sql = "SELECT * FROM `ex03` where style='3'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
+            <p><a style='color: red'>(3)</a></p>
             </p>
             <h3> D. 中文期刊論文(Chinese Journal Papers)</h3>
 
@@ -146,7 +148,14 @@
                 [2]   謝蟬薇、時文中, (in press), “應用情境模擬系統於課輔志工訓練之研究：以國小三年級數學減法為例,” 數位學習科技期刊。<br>
                 [3]   張家瑋、時文中、翁瑞鋒、曾憲雄, (2014), “應用情緒管理遊戲於國中生自傷預防教育之評量,” 數位學習科技期刊, 6(1), pp. 27-41。(NSC 100-2632-S-468-001-MY3)<br>
                 [4]   時文中、曾憲雄, (2011), “基於照片標籤的形成性評量提升戶外唐詩教學成效之研究,” 華文學刊, 9(2), pp. 13-22, 新加坡華文教師總會。(NSC 98-2511-S-468-002- )<br>
-            <p>(4)</p>
+                <?php
+                $sql = "SELECT * FROM `ex03` where style='4'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
+            <p><a style='color: red'>(4)</a></p>
             </p>
             <h3>E. 國內研討會論文(Conference Papers)</h3>
             <p>[1]   黃沛禎、時文中、謝宥諒, (2017), “轉譯因子協助蛋白質合成之3D動畫教學影片製作與評估,” 第12屆台灣數位學習發展研討會(TWELF 2017), Mar. 16-17, 2017, NCU, Taiwan.<br>
@@ -173,7 +182,14 @@
                 [22]  時碧英、時文中, (2009), “應用物件導向學習環境與教材進行國小修辭教學之研究,” 物件導向技術及應用研討會(OOTA 2009), Nov. 20, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
                 [23]  時美梅、時文中, (2009), “使用維基提示法加強國小學童寫作能力之研究,” 資訊教育與科技應用研討會(IETAC 2009), Nov. 6, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
                 [24]  張耀鴻、高千喻、時文中, (2009), “以Web2.0的概念建置數學教學法知識庫,” 資訊教育與科技應用研討會(IETAC 2009), Nov. 6, 2009, Taichung, Taiwan. (NSC 97-2511-S-468-003- )<br>
-            <p>(5)</p>
+                <?php
+                $sql = "SELECT * FROM `ex03` where style='5'";
+                $result = mysqli_query($connect,$sql);
+                while($row = mysqli_fetch_row($result)) {
+                    echo "$row[0]<br>";
+                }
+                ?>
+            <p><a style='color: red'>(5)</a></p>
             </p>
             <hr>
 
@@ -181,17 +197,18 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex03added.php">新增資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex03added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex03change.php">修改資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex03change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex03delete.php">刪除資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex03delete.php">刪除資料</a>
             </div>
         </div>
     </div>
 </div>
+
 
 <footer class="container-fluid text-center">
     <p>Email: <a style="font-style: italic" ><a style="color: #c8cd1e">wjshih@asia.edu.tw </a> </a>or <a style="color: #c8cd1e">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>

@@ -96,7 +96,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]($row[2])<br>";
                 }
-                echo"(1)";
+                echo"<a style='color: red'>(1)</a>";
                 ?>
             </p>
             <p><b>擔任圖書館推展委員會委員: <br></b>
@@ -106,7 +106,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1] $row[2]<br>";
                 }
-                echo"(2)";
+                echo"<a style='color: red'>(2)</a>";
                 ?>
             </p>
             <p><b>擔任 研究發展委員會委員: <br></b>
@@ -116,7 +116,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]<br>$row[2]";
                 }
-                echo"(3)";
+                echo"<a style='color: red'>(3)</a>";
                 ?>
             </p>
             <p><b>擔任 研究發展處學術發展組 組長: <br></b>
@@ -126,7 +126,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]$row[2]<br>";
                 }
-                echo"(4)";
+                echo"<a style='color: red'>(4)</a>";
                 ?>
             </p>
             <p><b>擔任學生事務會議委員: <br></b>
@@ -136,7 +136,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]$row[2]<br>";
                 }
-                echo"(5)";
+                echo"<a style='color: red'>(5)</a>";
                 ?>
             </p>
             <p><b>擔任專利及技術移轉權益委員會委員: <br></b>
@@ -146,7 +146,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]$row[2]<br>";
                 }
-                echo"(6)";
+                echo"<a style='color: red'>(6)</a>";
                 ?>
             </p>
             <p><b>擔任資應系生涯導師: <br></b>
@@ -156,7 +156,7 @@
                 while($row = mysqli_fetch_row($result)) {
                     echo "$row[1]$row[2]<br>";
                 }
-                echo"(7)";
+                echo"<a style='color: red'>(7)</a>";
                 ?>
             </p>
             <h3><b>得獎紀錄</b>:98學年度優良導師</h3>
@@ -167,17 +167,18 @@
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex01added.php">新增資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex01added.php">新增資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex01change.php">修改資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex01change.php">修改資料</a>
             </div>
             <div class="well">
-                <a href="http://120.108.117.245/~105021010/ex01delete.php">刪除資料</a>
+                <a style="color: red" href="http://120.108.117.245/~105021010/ex01delete.php">刪除資料</a>
             </div>
         </div>
     </div>
 </div>
+
 
 <footer class="container-fluid text-center">
     <p>Email: <a style="font-style: italic" ><a style="color: #c8cd1e">wjshih@asia.edu.tw </a> </a>or <a style="color: #c8cd1e">h1wjshih1@gmail.com</a> 研究室：HB39 分機：20039</p>
